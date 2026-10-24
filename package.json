@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-data-nola",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "DataNewOrleans MCP — New Orleans open data (data.nola.gov, Socrata SODA API).",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-a61f7ca58d611a87c59a3210ed6cd68c41cb43fadd336e66f4da49ce9d0f1c4b",
-    "sourceCommit": "8355bf3d1eece256a62a89dba2278e7a77bebe07"
+    "sourceHash": "v1-bd6fd8cc1b447546fd0f7dea5d37954c2e2cc347699aac6d0fc27950966679f0",
+    "sourceCommit": "01241619b78233fd55d0e3612331499a63f03ae7"
   }
 }
