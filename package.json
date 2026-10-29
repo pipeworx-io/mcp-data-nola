@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-data-nola",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "DataNewOrleans MCP — New Orleans open data (data.nola.gov, Socrata SODA API).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-data-nola": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "data-nola"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-data-nola.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/data-nola",
   "pipeworx": {
-    "sourceHash": "v1-5114c17cfa2589ac2a50d58e2f0a757c5a5591b1354db46d59b1cf4c0377fff0",
-    "sourceCommit": "ba9dd6df5992aeb16ef2425ee86d1752c34ca636"
+    "mode": "gateway",
+    "slug": "data-nola",
+    "gatewaySlug": "data-nola",
+    "sourceHash": "v1-67ec1c006a9da5499667735eec4cf420dcaa6a1df786f0f56f4a3b3533891ed8",
+    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
   }
 }
